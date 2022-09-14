@@ -1,0 +1,8 @@
+<component name="ArtifactManager">
+  <artifact type="jar" name="veevart:jar">
+    <output-path>$PROJECT_DIR$/out/artifacts/veevart_jar</output-path>
+    <root id="archive" name="veevart.jar">
+      <element id="module-output" name="veevart" />
+    </root>
+  </artifact>
+</component>
