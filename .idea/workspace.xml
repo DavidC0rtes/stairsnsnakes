@@ -6,11 +6,7 @@
     </artifacts-to-build>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="e843efef-1e63-40e2-ad8e-e9da1564be6c" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Tablero.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Tablero.java" afterDir="false" />
-    </list>
+    <list default="true" id="e843efef-1e63-40e2-ad8e-e9da1564be6c" name="Changes" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -59,7 +55,7 @@
       <workItem from="1663175334618" duration="259000" />
       <workItem from="1663175620077" duration="69000" />
       <workItem from="1663175915490" duration="393000" />
-      <workItem from="1663185785295" duration="4926000" />
+      <workItem from="1663185785295" duration="5396000" />
     </task>
     <servers />
   </component>
