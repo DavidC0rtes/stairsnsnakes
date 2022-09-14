@@ -10,7 +10,7 @@ import java.util.Map;
 public class Tablero {
 
     // Dimensión del tablero, ej: un tablero de 25 casillas tiene dimensión/tamaño 5x5.
-    private int size = 5;
+    private final int size = 5;
     private int ubicacion = 0;
     // El trabajo de shortcutsMap es mapear casillas (int) a otras casillas (int). En efecto
     // codificando el comportamiento de una escalera o serpiente.
@@ -19,14 +19,13 @@ public class Tablero {
         put(6, 17);
         put(9, 18);
         put(10, 12);
-        put(3, 11);
         put(14, 4);
         put(19, 8);
         put(22, 20);
         put(24, 16);
     }};
 
-    private ArrayList<Casilla> casillas = new ArrayList<>((size * size) + 1);
+    private final ArrayList<Casilla> casillas = new ArrayList<>((size * size) + 1);
 
     /**
      * El constructor de Tablero inicializa el contenido del mismo (cada elemento de casillas),
@@ -34,7 +33,7 @@ public class Tablero {
      */
     public Tablero() {
 
-        for (int i = 0; i < size*size; i++) {
+        for (int i = 0; i <= size*size; i++) {
             int shortcut = shortcutsMap.getOrDefault(i, -1);
             casillas.add(new Casilla(shortcut));
         }
@@ -50,18 +49,11 @@ public class Tablero {
 
     /**
      * Revisa si la casilla dónde está el jugador actual tiene una serpiente o escalera,
-     * si es el caso, actualiza entonces la ubicación de acuerdo al valor donde el atajo
-     * lo lleva.
-     * @return true si la casilla tiene un atajo | false en caso contrario.
+     * si es el caso.
+     * @return int si la casilla tiene un atajo | -1 en caso contrario.
      */
-    public boolean isEscaleraOrSerpiente() {
-        int shortcut = casillas.get(ubicacion).getShortcut();
-        if (shortcut != -1) {
-            ubicacion = shortcut;
-            return true;
-        }
-
-        return false;
+    public int isEscaleraOrSerpiente() {
+        return casillas.get(ubicacion).getShortcut();
     }
 
     /**
@@ -75,6 +67,6 @@ public class Tablero {
      * @return boolean.
      */
     public boolean gameOver() {
-        return ubicacion >= 25;
+        return ubicacion >= size*size;
     }
 }
