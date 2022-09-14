@@ -13,6 +13,7 @@
 Casilla	src/Casilla.java	/^    public Casilla(int shortcut) {$/;"	m	class:Casilla
 Casilla	src/Casilla.java	/^public class Casilla {$/;"	c
 Default	.idea/workspace.xml	/^    <task active="true" id="Default" summary="Default task">$/;"	i
+Ejecutar	README.md	/^## Ejecutar$/;"	s
 Jugador	src/Jugador.java	/^public class Jugador {$/;"	c
 Main	src/Main.java	/^public class Main {$/;"	c
 Tablero	src/Tablero.java	/^    public Tablero() {$/;"	m	class:Tablero
