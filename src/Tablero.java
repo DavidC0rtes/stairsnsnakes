@@ -19,7 +19,6 @@ public class Tablero {
         put(6, 17);
         put(9, 18);
         put(10, 12);
-        put(3, 11);
         put(14, 4);
         put(19, 8);
         put(22, 20);
@@ -34,18 +33,23 @@ public class Tablero {
      */
     public Tablero() {
 
-        for (int i = 0; i < size*size; i++) {
+        for (int i = 0; i <= size*size; i++) {
             int shortcut = shortcutsMap.getOrDefault(i, -1);
             casillas.add(new Casilla(shortcut));
         }
     }
 
     /**
-     * Actualiza la ubicación del jugador
+     * Actualiza la ubicación del jugador, BONUS. 2: Si la nueva ubicación supera 25,
+     * debe retroceder el número de veces que supera esta.
      * @param offset, int, número de casillas a mover.
      */
     public void mover(int offset) {
-        ubicacion += offset;
+        if (ubicacion + offset > 25) {
+            ubicacion = 25 - ((ubicacion+offset)-25);
+        } else {
+            ubicacion += offset;
+        }
     }
 
     /**
@@ -54,14 +58,13 @@ public class Tablero {
      * lo lleva.
      * @return true si la casilla tiene un atajo | false en caso contrario.
      */
-    public boolean isEscaleraOrSerpiente() {
+    public int isEscaleraOrSerpiente() {
         int shortcut = casillas.get(ubicacion).getShortcut();
         if (shortcut != -1) {
-            ubicacion = shortcut;
-            return true;
+            return shortcut;
         }
 
-        return false;
+        return -1;
     }
 
     /**
@@ -71,10 +74,10 @@ public class Tablero {
     public int getUbicacion() { return ubicacion; }
 
     /**
-     * El juego termina si se alcanza una ubicación >= 25
+     * El juego termina si se alcanza una ubicación == 25
      * @return boolean.
      */
     public boolean gameOver() {
-        return ubicacion >= 25;
+        return ubicacion == 25;
     }
 }
