@@ -10,5 +10,6 @@ En total realicé 3 de los 4 bonus, cada solución está en su respectiva rama:
 Cada rama indica las instrucciones de ejecución.
 
 ## Instrucciones
-Ejecutar clase principal:
-`java src/Main.java`
+Ejecutar el programa:
+
+`java -jar out/artifacts/veevart_jar/veevart.jar`
