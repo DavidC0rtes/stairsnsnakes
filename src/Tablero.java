@@ -53,6 +53,9 @@ public class Tablero {
      * @return int si la casilla tiene un atajo | -1 en caso contrario.
      */
     public int isEscaleraOrSerpiente() {
+        if (ubicacion >= 25) {
+            return -1;
+        }
         return casillas.get(ubicacion).getShortcut();
     }
 
