@@ -1,5 +1,6 @@
 ### IntelliJ IDEA ###
-out/
+out/production
+tags
 !**/src/main/**/out/
 !**/src/test/**/out/
 
