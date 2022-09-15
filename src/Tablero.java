@@ -56,7 +56,7 @@ public class Tablero {
      * Revisa si la casilla dónde está el jugador actual tiene una serpiente o escalera,
      * si es el caso, actualiza entonces la ubicación de acuerdo al valor donde el atajo
      * lo lleva.
-     * @return true si la casilla tiene un atajo | false en caso contrario.
+     * @return int si la casilla tiene un atajo | -1 en caso contrario.
      */
     public int isEscaleraOrSerpiente() {
         int shortcut = casillas.get(ubicacion).getShortcut();
