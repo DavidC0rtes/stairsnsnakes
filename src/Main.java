@@ -14,7 +14,7 @@ public class Main {
 
             int oldLocation = tablero.getUbicacion();
             if (dados+oldLocation > 25) {
-                System.out.printf("Jugador excede la casilla 25 por %d unidades\n", (dados+oldLocation)-25);
+                System.out.printf("!!!!!Jugador excede la casilla 25 por %d unidades\n", (dados+oldLocation)-25);
             }
             tablero.mover(dados); // Actualizar ubicación según los dados.
             System.out.printf("Jugador avanza al cuadro %d\n", tablero.getUbicacion());

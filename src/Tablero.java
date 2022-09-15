@@ -46,7 +46,7 @@ public class Tablero {
      */
     public void mover(int offset) {
         if (ubicacion + offset > 25) {
-            ubicacion = 25 - ((ubicacion+offset)-25);
+            ubicacion -= (ubicacion+offset) - 25;
         } else {
             ubicacion += offset;
         }
