@@ -13,3 +13,7 @@ Cada rama indica las instrucciones de ejecución.
 Ejecutar el programa:
 
 `java -jar out/artifacts/veevart_jar/veevart.jar`
+
+## Nota
+Dentro de la carpeta `Apex` se encuentra la versión escrita 
+en el Playground de Salesforce.

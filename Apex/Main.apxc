@@ -1,0 +1,34 @@
+public class Main {
+
+    private static Tablero tablero = new Tablero();
+    private static Jugador jugador = new Jugador();
+
+    public static void main(String[] args) {
+        // Mientras que el juego no haya terminado...
+        while (!tablero.gameOver()) {
+            Integer ubicacion = tablero.getUbicacion();
+
+            // Chequeo si la ubicación actual contiene una escalera o serpiente...
+            if (tablero.isEscaleraOrSerpiente()) {
+                // ...si es así el tablero actualizó la ubicación...
+                Integer newUbicacion = tablero.getUbicacion();
+                // ...si la ubicación nueva es mayor a la anterior, entonces era una escalera...
+                if (newUbicacion > ubicacion) {
+                    System.debug(LoggingLevel.INFO,'Jugador sube por escalera al cuadro ' + newUbicacion);
+                } else {
+                    //...si no entonces era una serpiente.
+                    System.debug(LoggingLevel.INFO,'Jugador baja por serpiente al cuadro ' + newUbicacion);
+                }
+            }
+
+            // Mecánica básica del juego
+            Integer dados = jugador.tirarDados();
+            System.debug(LoggingLevel.INFO,'Dado arroja ' + dados);
+            tablero.mover(dados); // Actualizar ubicación según los dados.
+            ubicacion = tablero.getUbicacion();
+            System.debug(LoggingLevel.INFO,'Jugador avanza a cuadro ' + ubicacion);
+        }
+        System.debug(LoggingLevel.INFO,'Jugador supera el cuadro 25\nFin');
+    }
+
+}
