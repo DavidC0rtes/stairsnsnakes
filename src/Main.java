@@ -1,8 +1,7 @@
 import java.util.Map;
 import java.util.concurrent.ThreadLocalRandom;
-
 /**
- * Clase principal del juego, se encarga de realizar el bucle y "orquestrar" las clases
+ * Clase principal del juego, se encarga de realizar el bucle.
  */
 public class Main {
     private static int ubicacion=0;
