@@ -5,10 +5,10 @@ dinámicas o aleatorias en este nuevo tablero)
 
 
 ## Instrucciones
-Ejecutar la clase principal con argumentos de linea de comandos:
+Ejecutar Jar:
 
-`java src/Main.java FILAS COLUMNAS`
+`java -jar out/artifacts/veevart_jar/veevart.jar`
 
 Ejemplo:
 
-`java src/Main.java 30 20`
+`java -jar out/artifacts/veevart_jar/veevart.jar 30 20`
