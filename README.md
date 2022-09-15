@@ -1,6 +1,9 @@
+# Reto escaleras y serpientes BONUS #1
+Reescriba el código (la versión sin bonus) en menos de 10 líneas de código
+
+Aclaración: se contaron las líneas a partir del método `main()`.
 ## Ejecutar
-Jar se encuentra en `out/artifacts/veevart_jar/veevart.jar`
+Ejecutar la clase main (Main.java)
 
-`java -jar veevart.jar`
+`java src/Main.java`
 
-Utiliza la versión openjdk-11
