@@ -1,6 +1,14 @@
-## Ejecutar
-Jar se encuentra en `out/artifacts/veevart_jar/veevart.jar`
+# Reto escaleras y serpientes Sin Bonus
+Esta rama solo contiene la versión del problema sin bonus.
 
-`java -jar veevart.jar`
+En total realicé 3 de los 4 bonus, cada solución está en su respectiva rama:
 
-Utiliza la versión openjdk-11
+* Bonus 1: https://github.com/DavidC0rtes/stairsnsnakes/tree/bonus1
+* Bonus 2: https://github.com/DavidC0rtes/stairsnsnakes/tree/bonus2
+* Bonus 4: https://github.com/DavidC0rtes/stairsnsnakes/tree/bonus4
+
+Cada rama indica las instrucciones de ejecución.
+
+## Instrucciones
+Ejecutar clase principal:
+`java src/Main.java`
