@@ -7,7 +7,7 @@ public class Casilla {
     /**
      * Cada casilla se inicializa con un shortcut y el valor (posición) de
      * la casilla en el tablero.
-     * @param shortcut, entero, representa una serpiente o escalera
+     * @param shortcut, representa la casilla destino al caer en una serpiente o escalera.
      */
     public Casilla(int shortcut) {
         this.shortcut = shortcut;
